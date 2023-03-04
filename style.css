@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+body {
+    font-size: 8px;
+    font-weight: 400;
+    font-family:Arial, Helvetica, sans-serif;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle at center, 
+    rgba(186,190,200,1) 35%, 
+    rgba(206,209,213,1) 80%, 
+    rgb(212, 215, 219) 85%,
+    rgb(219, 219, 219) 90%, 
+    rgba(228,228,228,1) 95%, 
+    rgb(247, 247, 247) 100%);
+}
+
+.frame {
+    position: relative;
+    height: auto;
+    min-width: 250px;
+    width: auto;
+    text-align: center;
+    box-shadow: #AAB4C1 0px 5px 30px 18px;
+    border: solid 1px #aab5cc;
+}
+
+/* HERO SECTION */
+
+.hero {
+    color: #fff;
+    filter: sepia(.4);
+    box-shadow: inset 0px 0px 0 2000px rgba(30, 46, 56, 0.55);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    padding: 3px 5px;
+    background-color: rgb(187, 187, 255);
+    background-image: url(http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTF9OtLxnbxSpLFzyhzXERKiAbnHlG25WfRzxRTNcRiTk0lHvsOXNKH9KNAOvTWi_sS);
+}
+
+
+.fa-circle {
+    font-size: 3px;
+    letter-spacing: .2em;
+}
+
+.service {
+    display: inline-flex;
+    align-items: center;
+}
+
+.service span {
+    padding: 0px 5px 0px 2px;
+}
+
+.time {
+    margin: auto;
+    padding-left: 4em;
+}
+
+.battery-life {
+    margin-left: auto;
+}
+
+/**********************************************/
+
+.cities {
+    justify-content: space-between;
+    padding: 12px;
+    margin-left: auto;
+}
+
+.display-current-city {
+    width: 100%;
+    padding-left: 1em;
+    justify-content: center;
+}
+
+/**********************************************/
+
+.todays-forecast {
+    padding: 36px 0px 2px 0px;
+    line-height: 1.3rem;
+}
+
+.current-temp {
+    font-size: 4em;
+    padding-left: .5rem;
+}
+
+.current-temp::after {
+    content: '°';
+}
+
+.current-condition {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1em;
+    letter-spacing: .3em;
+}
+
+.swipe-nav {
+    font-size: 1.6em;
+    color: rgb(196, 193, 193);
+    font-weight: bolder;
+}
+
+.swipe-nav span {
+    color: #fff;
+}
+
+/* FORECAST SECTION */
+
+.five-day-forecast {
+    color: #86909F;
+    background-color: #fff;
+    padding: 16px 32px;
+    font-size: 1.2em;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.daily-forecast {
+    margin: 3px;
+    padding: 4px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.daily-forecast:hover {
+    scale: 1.1;
+    box-shadow: #3e3d3d 0px 5px 6px;
+    color: #3e3d3d;
+    font-weight: bold;
+}
+
+.daily-conditions {
+    justify-content: space-between;
+}
+
+.temp {
+    display: inline-flex;
+    align-items: center;
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+.fa-cloud {
+    font-size: 20px;
+    width: 1.5em;
+    color: #dde2e9;
+    filter: drop-shadow(0px 2px 1px #000000);
+    text-shadow: 
+   -1px -1px 0 #868E9E,  
+    1px -1px 0 #868E9E,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+/* ADD LOCATION SECTION */
+
+.add-locations {
+    color: #fff;
+    background-color: #868E9E;
+    padding: 26px 1px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    cursor: pointer;
+    border-top: #6d6c6c solid 1px;
+}
